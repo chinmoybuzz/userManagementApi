@@ -1,0 +1,33 @@
+### Update User Parent API
+PATCH  http://localhost:3000/api/v1/users/update-parent/parent
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4M2IxODc0ODdmODNjYjRmYzRkMGQyNSIsImVtYWlsIjoiQWRtaW5AZ21haWwuY29tIiwiaWF0IjoxNzQ4NzI0MzU1LCJleHAiOjE3NDg3MjUyNTV9.LaH_2xwcJg5q3x2MnlxnrPtyEq9GtevsSej4Hf5xtHI
+
+{
+  "email": "subadmin@gmail.com",
+  "password": "User@123"
+}
+
+
+
+## login
+POST http://localhost:3000/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "email": "subadmin@gamil.com",
+    "password": "User@123",
+    
+}
+
+###
+POST http://localhost:3000/api/v1/auth/signup
+Content-Type: application/json
+
+{
+    "email": "chinmoycrj@gmail.com",
+    "password": "User@123",
+    "role": "admin",
+    "parentId":null
+}
+
