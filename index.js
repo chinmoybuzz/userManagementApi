@@ -3,7 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 const apiRoute = require("./routes/api.v1.route");
-const connectDb = require("./Db/dbConnect");
+const connectDb = require("./db/dbConnect");
 
 const start = async () => {
   app.use(cors());
