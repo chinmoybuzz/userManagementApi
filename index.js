@@ -2,7 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const app = express();
-const apiRoute = require("../userManagementBackend/routes/api.v1.route");
+const apiRoute = require("./routes/api.v1.route");
 const connectDb = require("./Db/dbConnect");
 
 const start = async () => {
